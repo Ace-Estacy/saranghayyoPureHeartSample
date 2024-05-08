@@ -1,0 +1,332 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Arial Rounded MT';
+}
+a{
+    text-decoration:none;
+    color:inherit;  
+}
+html::-webkit-scrollbar {
+    width: 1.5vh;
+}
+
+html::-webkit-scrollbar-track {
+    background: #cccccc;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgba(136, 136, 136, 0.35), rgba(100, 100, 100, 1));
+    border-radius: 10px;
+}
+
+    html::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(rgba(114, 181, 173, 0.4), rgba(100, 160, 200, 1));
+        border-radius: 10px;
+    }
+#navbar {
+    background-color: #72b5ad;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    color: #07090f;
+    border-radius: 3.5px;
+    position: fixed;
+    z-index: 10;
+}
+
+    #navbar img {
+        height: 80px;
+        width: 80px;
+        margin-left: 15px;
+    }
+
+#navbtn {
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    width: 100%;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 45px;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.naavbtn {
+    padding: 3px 7px;
+    transition: background-color 1s ease,border 0.7s,color 1s ease, border-radius 0.3s ease;
+}
+
+#navbtn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.naavbtn:hover {
+    background-color: #72b5ad;
+    border-radius: 25px;
+    border: 1px solid;
+    color: white;
+}
+
+img {
+    height: 100vh;
+    width: 100%;
+    opacity: 85%;
+    border-radius: 2.5px;
+    position: fixed;
+}
+#donatepg {
+    position: relative;
+    background-color: rgba(116, 166, 160,0.60);
+    height: 430vh;
+    width: 100%;
+    margin-top: 70px;
+    display:flex;
+    justify-items:center;
+    flex-direction:column;
+    align-items:center;
+
+}
+.tile {
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+    height: 500px;
+    width: 600px;
+
+    border-radius: 10px;
+    
+}
+    #d1 {
+        background-image: url("images/tilebg1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-position-y: center;
+        display: flex;
+        align-items: flex-end;
+        justify-items: center;
+        justify-content: center;
+    }
+    #d1 div {
+        height: 30%;
+        width: 100%;
+        border: 1px solid black;
+        border-radius:10px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.75)
+    }
+    #d1 div p{
+        margin-top:10px;
+        font-size:15px;
+    }
+
+
+    #d1 div h4{
+        margin-top:30px;    
+    }
+        #d1:hover {
+            height: 530px;
+            width: 630px;
+            box-shadow: 0 10px 15px black;
+        }
+        #d1:hover h4{
+          font-size:20px;
+          text-decoration:underline;
+        }
+
+#d2 {
+    background-image: url("images/tiltbg2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position-y: center;
+ 
+    display: flex;
+    align-items: flex-end;
+    justify-items: center;
+    justify-content: center;
+}
+
+    #d2 div {
+        height: 30%;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 10px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.75)
+    }
+
+        #d2 div p {
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        #d2 div h4 {
+            margin-top: 30px;
+        }
+
+    #d2:hover {
+        height: 530px;
+        width: 630px;
+        box-shadow: 0 10px 15px black;
+    }
+
+        #d2:hover h4 {
+            font-size: 20px;
+            text-decoration: underline;
+        }
+
+#d3 {
+    background-image: url("images/tilebg3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position-y: center;
+    display: flex;
+    align-items: flex-end;
+    justify-items: center;
+    justify-content: center;
+}
+
+    #d3 div {
+        height: 30%;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 10px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.75)
+    }
+
+        #d3 div p {
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        #d3 div h4 {
+            margin-top: 30px;
+        }
+
+    #d3:hover {
+        height: 530px;
+        width: 630px;
+        box-shadow: 0 10px 15px black;
+    }
+
+        #d3:hover h4 {
+            font-size: 20px;
+            text-decoration: underline;
+     
+            }
+
+
+
+#d4 {
+    background-image: url("images/tilebg4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position-y: center;
+    display: flex;
+    align-items: flex-end;
+    justify-items: center;
+    justify-content: center;
+}
+
+    #d4 div {
+        height: 30%;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 10px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.75)
+    }
+
+        #d4 div p {
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        #d4 div h4 {
+            margin-top: 20px;
+        }
+
+    #d4:hover {
+        height: 530px;
+        width: 630px;
+        box-shadow: 0 10px 15px black;
+    }
+
+        #d4:hover h4 {
+            font-size: 20px;
+            text-decoration: underline;
+        }
+
+
+
+#d5 {
+    background-image: url("images/tilebg5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position-y: center;
+    display: flex;
+    align-items: flex-end;
+    justify-items: center;
+    justify-content: center;
+}
+
+    #d5 div {
+        height: 30%;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 10px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.75)
+    }
+
+        #d5 div p {
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        #d5 div h4 {
+            margin-top: 20px;
+        }
+
+    #d5:hover {
+        height: 530px;
+        width: 630px;
+        box-shadow: 0 10px 15px black;
+    }
+
+        #d5:hover h4 {
+            font-size: 20px;
+            text-decoration: underline;
+        }
+
+
+#fot {
+    height: 25vh;
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+    background-color: #74827e;
+    text-align: center;
+}
+
+    #fot div {
+        padding: 10px 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+        #fot div h3 {
+            padding: 10px 20px;
+        }
+
+    #fot p {
+        margin-top: 70px;
+    }

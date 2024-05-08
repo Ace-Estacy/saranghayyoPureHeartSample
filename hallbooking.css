@@ -1,0 +1,576 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Arial Rounded MT';
+}
+    
+a {
+    text-decoration: none;
+    color: inherit;
+}
+html::-webkit-scrollbar {
+    width: 1.5vh;
+}
+
+html::-webkit-scrollbar-track {
+    background: #cccccc;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgba(136, 136, 136, 0.35), rgba(100, 100, 100, 1));
+    border-radius: 10px;
+}
+
+    html::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(rgba(114, 181, 173, 0.4), rgba(100, 160, 200, 1));
+        border-radius: 10px;
+    }
+#navbar {
+    background-color: #72b5ad;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    color: #07090f;
+    border-radius: 3.5px;
+    position: fixed;
+    z-index: 10;
+}
+
+    #navbar img {
+        height: 80px;
+        width: 80px;
+        margin-left: 15px;
+    }
+
+#navbtn {
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    width: 100%;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 45px;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.naavbtn {
+    padding: 3px 7px;
+    transition: background-color 1s ease,border 0.7s,color 1s ease, border-radius 0.3s ease;
+}
+
+#navbtn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.naavbtn:hover {
+    background-color: #72b5ad;
+    border-radius: 25px;
+    border: 1px solid;
+    color: white;
+}
+
+img {
+    height: 100vh;
+    width: 100%;
+    opacity: 85%;
+    border-radius: 2.5px;
+    position: fixed;
+}
+#hallmain {
+    position: relative;
+    background-color: rgba(116, 166, 160,0.60);
+    margin-top: 0;
+
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+    #hallmain div {
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+    }
+
+    #hall1 {
+        height: 550px;
+        width: 550px;
+        position: relative;
+        margin:2px 60px;
+        cursor:pointer;
+
+
+    }
+#hall1 img{
+    margin-top:0;
+    position:absolute;
+    opacity:100%;
+     height:65%;
+     width:100%;
+    border-radius:20px; 
+    transition:height 0.5s , width 0.5s;
+}
+
+#hall1 div{
+    margin-top:330px;
+    height:100px;
+    width:100px;
+    background-color:white;
+    width:100%;
+    height:219px;
+    border-radius:20px;
+    flex-direction:column;
+    text-align:center;
+    padding:10px 10px;
+
+
+}
+    #hall1 div h2 {
+        margin-top: 10px;
+        z-index: 1;
+    }
+#hall1 div p{
+    margin-top:10px;
+    margin:2px 15px;
+    z-index:1;
+}
+
+#hall1:hover img{
+    height:68%;
+    width:110%;
+
+}
+
+#hall2 {
+    height: 550px;
+    width: 550px;
+    position: relative;
+    margin: 2px 60px;
+    cursor: pointer;
+}
+
+    #hall2 img {
+        margin-top: 0;
+        position: absolute;
+        opacity: 100%;
+        height: 65%;
+        width: 100%;
+        border-radius: 20px;
+        transition: height 0.5s, width 0.5s;
+    }
+
+    #hall2 div {
+        margin-top: 330px;
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        width: 100%;
+        height: 219px;
+        border-radius: 20px;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 10px;
+    }
+#hall2 div h2 {
+    margin-top: 10px;
+    z-index: 1;
+}
+        #hall2 div p {
+            margin-top: 20px;
+            margin: 2px 15px;
+            z-index: 1;
+        }
+#hall2:hover img {
+    height: 68%;
+    width: 110%;
+}
+#hall3 {
+    height: 550px;
+    width: 550px;
+    position: relative;
+    margin: 2px 60px;
+    cursor: pointer;
+}
+
+    #hall3 img {
+        margin-top: 0;
+        position: absolute;
+        opacity: 100%;
+        height: 65%;
+        width: 100%;
+        border-radius: 20px;
+        transition: height 0.5s, width 0.5s;
+    }
+
+    #hall3 div {
+        margin-top: 330px;
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        width: 100%;
+        height: 219px;
+        border-radius: 20px;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 10px;
+    }
+        #hall3 div p {
+            margin-top: 10px;
+            margin: 2px 15px;
+            z-index: 1;
+        }
+
+        #hall3 div h2 {
+            margin-top: 10px;
+            z-index: 1;
+        }
+#hall3:hover img {
+    height: 68%;
+    width: 110%;
+}
+
+#hall4 {
+    height: 550px;
+    width: 550px;
+    position: relative;
+    margin: 2px 60px;
+    cursor: pointer;
+}
+
+    #hall4 img {
+        margin-top: 0;
+        position: absolute;
+        opacity: 100%;
+        height: 65%;
+        width: 100%;
+        border-radius: 20px;
+        transition: height 0.5s, width 0.5s;
+    }
+
+    #hall4 div {
+        margin-top: 330px;
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        width: 100%;
+        height: 219px;
+        border-radius: 20px;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 10px;
+    }
+        #hall4 div p {
+            margin-top: 10px;
+            margin: 2px 15px;
+            z-index: 1;
+        }
+        #hall4 div h2 {
+            margin-top: 10px;
+            z-index: 1;
+        }
+#hall4:hover img {
+    height: 68%;
+    width: 110%;
+}
+#hall5 {
+    height: 550px;
+    width: 550px;
+    position: relative;
+    margin: 2px 60px;
+    cursor: pointer;
+}
+
+    #hall5 img {
+        margin-top: 0;
+        position: absolute;
+        opacity: 100%;
+        height: 65%;
+        width: 100%;
+        border-radius: 20px;
+        transition: height 0.5s, width 0.5s;
+    }
+
+    #hall5 div {
+        margin-top: 330px;
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        width: 100%;
+        height: 219px;
+        border-radius: 20px;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 10px;
+    }
+        #hall5 div p {
+            margin-top: 10px;
+            margin: 2px 15px;
+            z-index: 1;
+        }
+        #hall5 div h2 {
+            margin-top: 10px;
+            z-index: 1;
+        }
+#hall5:hover img {
+    height: 68%;
+    width: 110%;
+}
+#hall6 {
+    height: 550px;
+    width: 550px;
+    position: relative;
+    margin: 2px 60px;
+    cursor: pointer;
+}
+
+    #hall6 img {
+        margin-top: 0;
+        position: absolute;
+        opacity: 100%;
+        height: 65%;
+        width: 100%;
+        border-radius: 20px;
+        transition: height 0.5s, width 0.5s;
+    }
+
+    #hall6 div {
+        margin-top: 330px;
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        width: 100%;
+        height: 219px;
+        border-radius: 20px;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 10px;
+    }
+        #hall6 div p {
+            margin-top: 10px;
+            margin: 2px 15px;
+            z-index: 1;
+        }
+
+        #hall6 div h2 {
+            margin-top: 10px;
+            z-index: 1;
+        }
+#hall6:hover img {
+    height: 68%;
+    width: 110%;
+}
+#hall7 {
+    height: 550px;
+    width: 550px;
+    position: relative;
+    margin: 2px 60px;
+    cursor: pointer;
+}
+
+    #hall7 img {
+        margin-top: 0;
+        position: absolute;
+        opacity: 100%;
+        height: 65%;
+        width: 100%;
+        border-radius: 20px;
+        transition: height 0.5s, width 0.5s;
+    }
+
+    #hall7 div {
+        margin-top: 330px;
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        width: 100%;
+        height: 219px;
+        border-radius: 20px;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 10px;
+    }
+        #hall7 div p {
+            margin-top: 10px;
+            margin: 2px 15px;
+            z-index: 1;
+        }
+
+        #hall7 div h2 {
+            margin-top: 10px;
+            z-index: 1;
+        }
+#hall7:hover img {
+    height: 68%;
+    width: 110%;
+}
+#hall8 {
+    height: 550px;
+    width: 550px;
+    position: relative;
+    margin: 2px 60px;
+    cursor: pointer;
+}
+
+    #hall8 img {
+        margin-top: 0;
+        position: absolute;
+        opacity: 100%;
+        height: 65%;
+        width: 100%;
+        border-radius: 20px;
+        transition: height 0.5s, width 0.5s;
+    }
+
+    #hall8 div {
+        margin-top: 330px;
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        width: 100%;
+        height: 219px;
+        border-radius: 20px;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 10px;
+    }
+
+        #hall8 div h2 {
+            margin-top: 10px;
+            z-index: 1;
+        }
+
+        #hall8 div p {
+            margin-top: 10px;
+            margin: 2px 15px;
+            z-index: 1;
+        }
+#hall8:hover img {
+    height: 68%;
+    width: 110%;
+}
+#hall9 {
+    height: 550px;
+    width: 550px;
+    position: relative;
+    margin: 2px 60px;
+    cursor: pointer;
+}
+
+    #hall9 img {
+        margin-top: 0;
+        position: absolute;
+        opacity: 100%;
+        height: 65%;
+        width: 100%;
+        border-radius: 20px;
+        transition: height 0.5s, width 0.5s;
+    }
+
+    #hall9 div {
+        margin-top: 330px;
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        width: 100%;
+        height: 219px;
+        border-radius: 20px;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 10px;
+    }
+
+        #hall9 div h2 {
+            margin-top: 10px;
+            z-index: 1;
+        }
+        #hall9 div p {
+            margin-top: 10px;
+            margin: 2px 15px;
+            z-index: 1;
+        }
+#hall9:hover img {
+    height: 68%;
+    width: 110%;
+}
+
+#hall10 {
+    height: 550px;
+    width: 550px;
+    position: relative;
+    margin: 2px 60px;
+    cursor: pointer;
+}
+
+    #hall10 img {
+        margin-top: 0;
+        position: absolute;
+        opacity: 100%;
+        height: 65%;
+        width: 100%;
+        border-radius: 20px;
+        transition: height 0.5s, width 0.5s;
+    }
+
+    #hall10 div {
+        margin-top: 330px;
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        width: 100%;
+        height: 219px;
+        border-radius: 20px;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 10px;
+    }
+
+        #hall10 div h2 {
+            margin-top: 10px;
+            z-index: 1;
+        }
+        #hall10 div p {
+            margin-top: 10px;
+            margin: 2px 15px;
+            z-index: 1;
+        }
+#hall10:hover img {
+    height: 68%;
+    width: 110%;
+}
+#end{
+    margin-bottom:50px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#fot {
+    height: 25vh;
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+    background-color: #74827e;
+    text-align: center;
+}
+
+    #fot div {
+        padding: 10px 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+        #fot div h3 {
+            padding: 10px 20px;
+        }
+
+    #fot p {
+        margin-top: 70px;
+    }

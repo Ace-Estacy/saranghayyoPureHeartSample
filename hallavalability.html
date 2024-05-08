@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Saranghayyo PureHeart </title>
+    <link href="images/LOGO.png" rel="shortcut icon" /><!--for logo in the tab section -->
+    <link href="hallavalability.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!--gsap library CDN  for animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!--scroll trigger for animation -->
+
+</head>
+<body>
+    <!--navigation bar start-->
+    <div id="navbar">
+        <a href="index.html"><img src="images/LOGO.png" /></a>
+        <div id="navbtn">
+
+            <h3 class="naavbtn"><a href="aboutus.html">About us</a></h3>
+            <h3 class="naavbtn"><a href="contactus.html">Contact us</a></h3>
+            <h3 class="naavbtn"><a href="donate.html">Fundraiser</a> </h3>
+            <h3 class="naavbtn"><a href="hallbooking.html"> Halls </a></h3>
+            <h3 class="naavbtn"><a href="login.html"> Log in</a></h3>
+        </div>
+    </div>    <!--navigation bar end -->
+    <img src="images/katt-yukawa-K0E6E0a0R3A-unsplash.jpg" /><!--background img -->
+    <!--hall main start -->
+    <div id="hallava">
+
+        <div id="abouthall">
+            <h1>About the hall</h1>
+            <p>
+                🏢 Our charity organization takes great pride in offering a multifaceted hall that goes beyond being just four walls and a roof. Nestled at the heart of our community, our hall is a spacious and welcoming venue that can comfortably accommodate gatherings of 100 to 200 people.<br /><br /><br />
+
+                🌟 The hall is a versatile space, designed to host a diverse range of activities. Natural light streams in through large windows, creating an inviting ambiance, while state-of-the-art audiovisual equipment ensures every message is heard and every story is shared. With its flexible layout, it is perfect for a wide array of events, from workshops, meetings, and educational programs to cultural celebrations and social gatherings.<br /> <br /><br /><br />
+
+                💪 But our hall is more than just a physical space. It serves as the epicenter of our charitable efforts, embodying our commitment to community empowerment and transformation. With a focus on inclusivity and accessibility, we strive to make this hall available to all, regardless of their background or financial means.<br /><br /><br /><br />
+
+                🤝 By providing this hall, we hope to catalyze change and drive progress within our community. We aim to foster collaboration, education, and a sense of belonging, all while strengthening the bonds that tie us together. Our charity envisions this hall as the beating heart of our mission, a place where dreams are realized, initiatives are born, and lives are enriched. Join us in our journey to make this spacious venue a true catalyst for positive change in the community. 🌍🏢🌟🤝💪<br /><br /><br /><br />
+
+            </p>
+
+        </div>
+        <!--hall avalability section  start-->
+        <div id="ava">
+            <h1>Check hall availability</h1>
+            <label id="usdate" for="date">Enter the date :  </label>
+            <input type="text" placeholder="eg 1-1-2024" id="date"><br />
+            <p id="result"></p>
+            <button id="checker">Check</button>
+
+        </div>    <!--hall avalability section  end -->
+        <!--payment form  start-->
+        <form action="hallavalability.html">
+            <fieldset>
+                <legend>BOOK THE HALL</legend>
+                <table>
+                    <tr>
+                        <td><label for="name">Name :</label></td>
+                        <td><input type="text" id="name" class="required" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phnum">Phone number : </label></td>
+                        <td><input type="tel" id="phnum" class="required" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email : </label></td>
+                        <td><input type="email" id="email" class="required" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="date">Date of booking  :  </label></td>
+                        <td> <input type="date" id="date" class="required" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="time">Time :</label></td>
+                        <td> <input type="time" id="time" class="required" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cardnum">Card number : </label></td>
+                        <td> <input type="tel" id="cardnum" class="required" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="exp">Card exp date :</label></td>
+                        <td><input type="tel" id="exp" class="required" requiredid /></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="cvv">CVV :</label></td>
+                        <td> <input type="tel" id="cvv" class="required" required /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> <button id="subbtn">Pay</button></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <!--payment form  start-->
+    </div>
+
+
+    <!--hall main end  -->
+
+    <script src="index.js"></script>
+    <script src="function.js"></script>
+</body>
+</html>

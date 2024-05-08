@@ -1,0 +1,197 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Arial Rounded MT';
+}
+
+html::-webkit-scrollbar {
+    width: 1.5vh;
+}
+
+html::-webkit-scrollbar-track {
+    background: #cccccc;
+    border-radius: 20px;
+    margin-block: 2vh;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgba(136, 136, 136, 0.35), rgba(100, 100, 100, 1));
+    border-radius: 10px;
+}
+
+    html::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(rgba(114, 181, 173, 0.4), rgba(100, 160, 200, 1));
+        border-radius: 10px;
+    }
+
+    a{
+        text-decoration:none;
+        color:inherit;
+    }
+
+#navbar {
+    background-color: #72b5ad;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    color: #07090f;
+    border-radius: 3.5px;
+    position: fixed;
+    z-index: 10;
+}
+
+    #navbar img {
+        height: 80px;
+        width: 80px;
+        margin-left: 15px;
+    }
+
+#navbtn {
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    width: 100%;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 45px;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.naavbtn {
+    padding: 3px 7px;
+    transition: background-color 1s ease,border 0.7s,color 1s ease, border-radius 0.3s ease;
+}
+
+#navbtn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.naavbtn:hover {
+    background-color: #72b5ad;
+    border-radius: 25px;
+    border: 1px solid;
+    color: white;
+}
+
+img {
+    height: 100vh;
+    width: 100%;
+    opacity: 85%;
+    border-radius: 2.5px;
+    position: fixed;
+}
+#contactmain {
+    background-color: rgba(116, 166, 160,0.60);
+    position:relative;
+    width:100%;
+    height:150vh;
+    text-align:center;
+    display:flex;
+    justify-items:center;
+    align-items:center;
+    margin-top:75px;
+    flex-direction:column;
+
+}
+    
+    #contactmain h1{
+        margin:20px 20px;
+        font-size:50px;
+    }
+
+
+    #contactmain h2{
+        font-size:30px;
+        margin:30px 20px;
+
+    }
+    #contactmain span{
+        text-decoration:underline;
+    }
+    fieldset{
+        height:600px;
+        width:1000px;
+        border:2px solid black;
+    }
+    legend{
+        font-size:40px;
+        color:blue;
+    }
+    table{
+        margin-left:140px;
+    }
+    label{
+        font-size:30px;
+
+    }
+
+#name {
+    margin: 30px;
+    font-size: 30px;
+    margin-right:10px;
+}
+
+#phnum {
+    margin: 30px;
+    font-size: 30px;
+    margin-right: 10px;
+}
+#email {
+    margin: 30px;
+    font-size: 30px;
+    margin-right: 10px;
+}
+#que {
+    margin: 30px;
+    font-size: 30px;
+    height:100px;
+    width:350px;
+    margin-right: 10px;
+}
+
+#sbtn {
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    border-style: solid;
+    color: white;
+    background-color: #051f4f;
+    cursor: pointer;
+    transition: background-color 0.5s,text-shadow 0.5s, border-color 0.5s;
+}
+
+    #sbtn:hover {
+        background-color: rgba(5, 31, 79, 0.85);
+        text-shadow: 2px 2px 5px black;
+        border-color: wheat;
+    }
+    #fot {
+        height: 25vh;
+        width: 100%;
+        position: relative;
+        margin-top: 0;
+        background-color: #74827e;
+        text-align: center;
+    }
+
+    #fot div {
+        padding: 10px 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+        #fot div h3 {
+            padding: 10px 20px;
+        }
+
+    #fot p {
+        margin-top: 70px;
+    }

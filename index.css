@@ -1,0 +1,393 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /*this will help keep the content hidden if it  excceds the width of the contaner */
+    font-family: 'Arial Rounded MT';
+}
+/*to give style to the  scroll bar */
+html::-webkit-scrollbar { 
+    width: 1.5vh;     /*this will define the width of the scroll bar  */
+}
+html::-webkit-scrollbar-track {/*this is to change the track with backround of grey and eill give border radius*/
+    background: #cccccc;
+    border-radius:20px;
+    margin-block:2vh;  /*this will give margin top and bottom */
+}
+html::-webkit-scrollbar-thumb { /*this will modify the thumb of the scrollbar*/
+    background: linear-gradient(rgba(136, 136, 136, 0.35), rgba(100, 100, 100, 1));
+    border-radius: 10px;
+}
+    html::-webkit-scrollbar-thumb:hover { /*this will give a hover effect to the thumb of the scroll bar */
+        background: linear-gradient(rgba(114, 181, 173, 0.4), rgba(100, 160, 200, 1));
+        border-radius: 10px;
+    }
+#navbar {
+    background-color: #72b5ad;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    color: #07090f;
+    border-radius: 3.5px;
+    position: fixed;/*it is setting the position to fixed it will stay on the screen all the time */
+    z-index: 10;/*this is defining the index of the nav bar on the Z index and it will bring this div forward */
+}
+#navbar img{
+    height:80px;
+    width:80px;
+    margin-left:15px;
+  
+}
+#navbtn {
+    display: flex;
+    margin: 20px;
+    text-align:center;
+    width: 100%;
+    justify-content: flex-end;/*this is aligning the items to the center at Y-axis*/
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 45px;
+    position: relative;
+    overflow-y: hidden;/*this will help keep the content hidden if it  excceds the width of the contaner */
+}
+.naavbtn {
+    padding: 3px 7px;
+    
+    transition: background-color 1s ease,border 0.7s ,color 1s ease, border-radius 0.3s ease;/*This will ease out the transtion of the elements */
+}
+#navbtn a{
+    text-decoration:none;/*removing the underline from the A tag text*/
+    color:inherit;/*removing the default blue  color of A tag */
+}
+.naavbtn:hover {
+    background-color: #72b5ad;
+    border-radius: 25px;
+    border: 1px solid ;
+    color: white;
+}
+img {
+    height: 100vh;/*this will define the height in response to the viewport height */
+    width: 100%;
+    opacity: 85%;
+    border-radius: 2.5px;
+    position: fixed;
+}
+#main {
+    margin: 70px;
+    margin-bottom:0;
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    z-index:1;
+}
+
+#page-1 {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center; /*this is a property of flex to align the content on y axis over here it will in center of the div on y axis */
+    align-content: center; /*this is a property of flex to align the content on x axis over here it will in center of the div on x axis */
+    text-align: center;
+}
+
+
+    #page-1 h1 {
+        position: relative;
+        color: white;
+        font-size: 70px;
+        margin-top: 175px;
+        -webkit-text-stroke: 0.5px black;/*this is giving a outline strock to the text*/
+        text-shadow:2px 2px 2px black;
+    }
+    #page-1 h2 {
+        position: relative;
+        color: white;
+        font-size: 50px;
+        padding-top: 45px;
+        -webkit-text-stroke: 0.5px black;/*this is for the outline stroke of the text */
+        text-shadow: 2px 2px 2px black;
+    }
+    #page-1 p {
+        position: relative;
+        color: white;
+        font-size: 20px;
+        -webkit-text-stroke: 0.2px black;
+        text-shadow: 1px 1px 2px black;
+        padding-top:20px;
+    }
+    #page-2{
+     width:100%;
+        height:90vh;
+        margin-top:0;
+    }
+#scroller {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;/*this will prevent the content form wrapping */
+    color: #FFF6ED;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    z-index: 9;
+    margin-top: 0;
+}
+.scr {
+    margin-left: 10px;
+    margin-right: 10px;
+    animation: slide 20s linear infinite;
+    margin-top: 0;
+}
+.box {
+    display: inline-block;
+    background-color: #ff3231;
+    height: 125px;
+    width: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    white-space: nowrap;
+    padding: 40px 10px;
+    position: relative;
+    border-radius: 20px;
+    transition: background-color 0.8s;
+}
+@keyframes slide{  /*this is a the animation of the scroller */
+    from{
+        transform:translateX(0)/*this is defining the from state that where it will start from */
+    }
+    to {
+        transform: translateX(-100%)/*this is defining the end state the where it will go to */
+    }
+}
+.box:hover {
+    background-color: #0e7c8f;
+}
+
+#aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+   
+    text-align: center;
+    z-index: 9;
+}
+
+
+    #aboutus h1 {
+        font-size: 65px;
+        font-weight: bolder;
+        color:black;
+    }
+    #aboutus p {
+        margin-top:50px;
+        font-size: 30px;
+        font-weight: 100;
+        -webkit-text-stroke:0.2px black    }
+#page-3 {
+    height: 115vh;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction:column;
+    margin-left:0;
+}
+    #page-3 p{
+     margin-top:2px;
+        font-size:65px;
+        font-family:Arial;
+      
+    }
+#tabs{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height:90vh;
+    justify-content :center;
+    align-content:center;
+    margin-left:0;
+   
+}
+#donate {
+    margin-top: 50px;
+    border: 1px solid black;
+    height: 67vh;
+    width: 500px;
+    color: white;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;/*over here i have changed the direction of the flex cantaner by defult it is row  */
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-image: url(images/larm-rmah-AEaTUnvneik-unsplash.jpg);
+    background-size: cover;
+}
+
+#donate h2{
+    text-shadow:-2px -2px 3px black;
+    z-index:10;
+    margin-bottom:25px;
+}
+
+    #donate:hover {
+        background-color: #051f4f;
+
+    }
+
+
+#hall {
+    margin-top: 50px;
+    border: 1px solid;
+    height: 67vh;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-image: url('images/18823839.jpg');
+    background-size: cover;
+}
+    #hall h2 {
+        margin-bottom: 25px;
+        color: white;
+        text-shadow: -2px -2px 3px black
+    }
+         a{
+            text-decoration:none;
+            color:inherit;
+        }
+#page-4{
+    height:115vh;
+    width:100%;
+    display:flex;
+    justify-items:center;
+    align-content:center;    
+    text-align:center;
+    flex-direction:column;
+}
+#page-4 h1{
+    margin-top:0;
+    font-size:75px;
+
+}
+#display {
+    height: 300px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 60px;
+    margin-top: 60px;
+    color: #4c5257;
+}
+#tag1 {
+    color: #b0122f;
+}
+
+#first{
+    display:flex;
+    flex-direction:column;
+    margin-left:5px; 
+    margin-top:20px;
+    font-size:50px;
+    width:73%;/*This will defint the width to the percentage */
+    cursor:pointer;/*this will change the curser to pinter when it is over this cantaner */
+    text-align:center;
+}
+#bar1 {
+    margin-top: 75px;
+    border: 1px solid black;
+    font-size: 25px;
+    padding: 2px 0px;
+    background-color: #b0122f;
+    color: white;
+    height: 44px;
+    width: 100%;
+    border-bottom-left-radius: 20px; /*This will corve the border from bottom left side */
+    border-top-left-radius: 20px; /*This will corve the top from bottom left side */
+}
+
+    #second {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        font-size: 50px;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-left: 0;
+    }
+
+    #second div {
+        border: 1px solid black;
+        margin-top: 75px;
+        font-size: 17px;
+        width:140px;
+        padding: 2px 0px;
+    }
+
+#third {
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+    #third div {
+        border: 1px solid black;
+        margin-top: 75px;
+        margin-left: 0;
+        font-size: 17px;
+        width: 150px;
+        padding: 2px 0px;
+        padding-right:5px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+
+
+#heading {
+    font-size: 30px;
+    color: #b0122f;
+}
+#chgpar p{
+    font-size:20px;
+    margin:25px 75px;
+}
+
+
+#fot {
+    height: 25vh;
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+    background-color: #74827e;
+    text-align:center;
+}
+
+    #fot div {
+        padding: 10px 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+#fot div h3{
+    padding:10px 20px;
+}
+    #fot p {
+        margin-top:70px;
+    }

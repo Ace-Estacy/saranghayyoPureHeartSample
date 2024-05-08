@@ -1,0 +1,126 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Arial Rounded MT';
+}
+html::-webkit-scrollbar {
+    width: 1.5vh;
+}
+
+html::-webkit-scrollbar-track {
+    background: #cccccc;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgba(136, 136, 136, 0.35), rgba(100, 100, 100, 1));
+    border-radius: 10px;
+}
+
+    html::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(rgba(114, 181, 173, 0.4), rgba(100, 160, 200, 1));
+        border-radius: 10px;
+    }
+#navbar {
+    background-color: #72b5ad;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    color: #07090f;
+    border-radius: 3.5px;
+    position: fixed;
+    z-index: 10;
+}
+
+    #navbar img {
+        height: 80px;
+        width: 80px;
+        margin-left: 15px;
+    }
+
+#navbtn {
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    width: 100%;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 45px;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.naavbtn {
+    padding: 3px 7px;
+    transition: background-color 1s ease,border 0.7s,color 1s ease, border-radius 0.3s ease;
+}
+
+#navbtn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.naavbtn:hover {
+    background-color: #72b5ad;
+    border-radius: 25px;
+    border: 1px solid;
+    color: white;
+}
+
+img {
+    height: 100vh;
+    width: 100%;
+    opacity: 85%;
+    border-radius: 2.5px;
+    position: fixed;
+}
+    #aboutus {
+    position: relative;
+    background-color: rgba(116, 166, 160,0.60);
+    height:150vh;
+    width: 100%;
+    margin-top: 0;
+    text-align:center;
+
+}
+#aboutus h1{
+    margin-top:150px;
+    font-size:75px;
+}
+        #aboutus p {
+            margin: 50px;
+            font-size: 30px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+#fot {
+    height: 25vh;
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+    background-color: #74827e;
+    text-align: center;
+}
+
+    #fot div {
+        padding: 10px 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+        #fot div h3 {
+            padding: 10px 20px;
+        }
+
+    #fot p {
+        margin-top: 70px;
+    }

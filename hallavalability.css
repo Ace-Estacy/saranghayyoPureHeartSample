@@ -1,0 +1,217 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Arial Rounded MT';
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+html::-webkit-scrollbar {
+    width: 1.5vh;
+}
+
+html::-webkit-scrollbar-track {
+    background: #cccccc;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgba(136, 136, 136, 0.35), rgba(100, 100, 100, 1));
+    border-radius: 10px;
+}
+
+    html::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(rgba(114, 181, 173, 0.4), rgba(100, 160, 200, 1));
+        border-radius: 10px;
+    }
+#navbar {
+    background-color: #72b5ad;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    color: #07090f;
+    border-radius: 3.5px;
+    position: fixed;
+    z-index: 10;
+}
+
+    #navbar img {
+        height: 80px;
+        width: 80px;
+        margin-left: 15px;
+    }
+
+#navbtn {
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    width: 100%;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 45px;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.naavbtn {
+    padding: 3px 7px;
+    transition: background-color 1s ease,border 0.7s,color 1s ease, border-radius 0.5s ease;
+}
+
+#navbtn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.naavbtn:hover {
+    background-color: #72b5ad;
+    border-radius: 25px;
+    border: 1px solid;
+    color: white;
+}
+
+img {
+    height: 100vh;
+    width: 100%;
+    opacity: 85%;
+    border-radius: 2.5px;
+    position: fixed;
+}
+
+#hallava {
+    position: relative;
+    background-color: rgba(116, 166, 160,0.60);
+    margin-top: 75px;
+    width:100%;
+    text-align:center;
+  
+}
+
+#abouthall {
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 70px;
+    margin-top:70px;
+}
+
+    #abouthall h1 {
+        font-size: 50px;
+    }
+
+    #abouthall p {
+        padding: 30px 30px;
+        font-size:23px;
+        margin:10px 100px;
+    }
+#ava {
+    margin-top: 70px;
+    text-align: center;
+
+}
+#ava h1{
+    font-size:50px;
+   padding:20px 30px;
+}
+#usdate {
+    font-size: 30px;
+}
+#ava input {
+    font-size: 20px;
+    margin-right: 350px;
+}
+    #ava button {
+        background-color: #051f4f;
+        color:white;
+        border-radius: 20px;
+        padding: 10px 15px;
+        margin-top: 10px;
+        font-size: 20px;
+        border-style:solid;
+        transition:background-color 0.5s,text-shadow 0.5s,border-color 0.5s;
+
+    }
+        #ava button:hover {
+            background-color: rgba(5, 31, 79, 0.85);
+            text-shadow: 2px 2px 5px black;
+            border-color: wheat;
+        }
+        #ava p{
+            font-size:30px;
+        }
+form{
+    text-align:left;
+    padding:20px 30px;
+
+}
+table{
+    margin-left:115px;  
+}
+
+fieldset{
+    border:2px solid black;
+    margin:30px 40px;
+}
+legend {
+    font-size: 25px;
+    color: blue;
+    margin-left: 600px;
+}
+label {
+    font-size: 20px;
+    margin-left: 400px;
+}
+#name{
+    margin:20px 20px;
+    font-size:20px;
+
+}
+#phnum {
+    margin: 20px 20px;
+    font-size: 20px;
+}
+#email {
+    margin: 20px 20px;
+    font-size: 20px;
+}
+#date {
+    margin: 20px 20px;
+    font-size: 20px;
+}
+#time {
+    margin: 20px 20px;
+    font-size: 20px;
+}
+#cardnum {
+    margin: 20px 20px;
+    font-size: 20px;
+}
+#exp {
+    margin: 20px 20px;
+    font-size: 20px;
+}
+#cvv {
+    margin: 20px 20px;
+    font-size: 20px;
+}
+
+#subbtn {
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    border-style: solid;
+    color: white;
+    background-color: #051f4f;
+    cursor: pointer;
+    margin-left: 600px;
+    transition: background-color 0.5s,text-shadow 0.5s, border-color 0.5s;
+}
+    #subbtn:hover {
+        background-color: rgba(5, 31, 79, 0.85);
+        text-shadow:2px 2px 5px black;
+        border-color:wheat;
+    }
